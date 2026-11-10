@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets - never commit
+.env
+*.key
+
+# Real emails contain personal data - only the synthetic test samples are committed
+*.eml
+!backend/tests/samples/*.eml
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
