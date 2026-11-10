@@ -1,0 +1,26 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@gmail.com; spf=pass
+ smtp.mailfrom=noa.friend@gmail.com; dmarc=pass header.from=gmail.com
+From: "Noa Friend" <noa.friend@gmail.com>
+To: dana@example.org
+Subject:
+Date: Mon, 09 Nov 2026 18:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3769643108780997460=="
+
+--===============3769643108780997460==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+
+
+--===============3769643108780997460==
+Content-Type: application/zip
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="files.zip"
+MIME-Version: 1.0
+
+UEsDBBQAAAAAAJRyal3YAMplDwAAAA8AAAALAAAAaG9tZXdvcmsucHlwcmludCgnaGVsbG8nKQpQ
+SwECFAMUAAAAAACUcmpd2ADKZQ8AAAAPAAAACwAAAAAAAAAAAAAAgAEAAAAAaG9tZXdvcmsucHlQ
+SwUGAAAAAAEAAQA5AAAAOAAAAAAA
+
+--===============3769643108780997460==--

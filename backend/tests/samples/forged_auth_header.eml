@@ -1,0 +1,13 @@
+Authentication-Results: mx.google.com; spf=fail smtp.mailfrom=x@attacker.test;
+ dmarc=fail header.from=bank.example
+From: "Bank" <security@bank.example>
+To: dana@example.org
+Subject: Confirm your identity
+Date: Mon, 09 Nov 2026 18:00:00 +0000
+Authentication-Results: mx.google.com; dkim=pass header.i=@bank.example;
+ dmarc=pass header.from=bank.example
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Please confirm your identity to keep using online banking.

@@ -1,0 +1,28 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@mail.shop.example;
+ spf=pass smtp.mailfrom=bounce@mail.shop.example; dmarc=pass (p=REJECT)
+ header.from=shop.example
+From: "Example Shop" <news@mail.shop.example>
+To: dana@example.org
+Subject: Last hours: 20% off everything =?utf-8?b?4o+w?=
+Date: Mon, 09 Nov 2026 18:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============0995111463040966693=="
+
+--===============0995111463040966693==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Dana, our sale ends at midnight.
+
+--===============0995111463040966693==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<div style=3D"display:none">Our biggest sale of the year</div><p>Hi Dana, our=
+ sale ends at midnight.</p><a href=3D"https://click.tracker-esp.example/c/123=
+">Shop now</a><div style=3D"border-top:1px solid #ddd;font-size:1px">&nbsp;</=
+div>
+
+--===============0995111463040966693==--

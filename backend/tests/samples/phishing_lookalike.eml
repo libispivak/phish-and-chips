@@ -1,0 +1,26 @@
+Authentication-Results:
+ mx.google.com; spf=pass smtp.mailfrom=bounce@mailer.bulk-sender.test
+From: "PayPal Service" <service@paypa1-secure.test>
+To: dana@example.org
+Subject: Action required: account suspended
+Date: Mon, 09 Nov 2026 18:00:00 +0000
+Reply-To: help@collector.test
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============5528883462097990719=="
+
+--===============5528883462097990719==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Verify your account within 24 hours or it will be closed.
+
+--===============5528883462097990719==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<p>We noticed unusual activity. Please verify your account within 24 hours.</=
+p><a href=3D"http://paypa1-secure.test/login">www.paypal.com/security</a>
+
+--===============5528883462097990719==--

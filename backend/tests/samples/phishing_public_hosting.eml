@@ -1,0 +1,24 @@
+Authentication-Results: mx.google.com; dkim=pass
+ header.i=@sender.unrelated.test; spf=pass
+ smtp.mailfrom=x@sender.unrelated.test
+From: "Cloud Storage" <alerts@storage-alerts.test>
+To: dana@example.org
+Subject: Payment failed for your storage plan
+Date: Mon, 09 Nov 2026 18:00:00 +0000
+X-Original-Sender-Status: Trusted Sender
+Received: from docs.google.com (relay.unrelated.test. [198.51.100.7]) by
+ mx.google.com with ESMTPS id test; Mon, 9 Nov 2026 10:00:00 -0800 (PST)
+Content-Type: multipart/alternative;
+ boundary="===============5531041098625834938=="
+
+--===============5531041098625834938==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<p>Your payment method has expired. Please update your payment details.</p><a=
+ href=3D"https://storage.googleapis.com/some-bucket/update.html">Update payme=
+nt method</a><div style=3D"opacity:0;font-size:1px">Madame, Monsieur, filler =
+text for filters</div>
+
+--===============5531041098625834938==--

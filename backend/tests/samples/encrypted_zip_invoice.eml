@@ -1,0 +1,26 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@supplier.example;
+ dmarc=pass header.from=supplier.example
+From: "Accounts" <accounts@supplier.example>
+To: dana@example.org
+Subject: Invoice attached, password: 4417
+Date: Mon, 09 Nov 2026 18:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6761331861876961879=="
+
+--===============6761331861876961879==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Please see the attached invoice. Password: 4417
+
+--===============6761331861876961879==
+Content-Type: application/zip
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="invoice.zip"
+MIME-Version: 1.0
+
+UEsDBBQAAQAAAJRyal0lncL6BAAAAAQAAAALAAAAaW52b2ljZS5wZGZzdHViUEsBAhQDFAABAAAA
+lHJqXSWdwvoEAAAABAAAAAsAAAAAAAAAAAAAAIABAAAAAGludm9pY2UucGRmUEsFBgAAAAABAAEA
+OQAAAC0AAAAAAA==
+
+--===============6761331861876961879==--

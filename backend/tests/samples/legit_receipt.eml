@@ -1,0 +1,26 @@
+Authentication-Results: mx.google.com; dkim=pass
+ header.i=@example-airlines.example; spf=pass
+ smtp.mailfrom=receipts@example-airlines.example; dmarc=pass
+ header.from=example-airlines.example
+From: "Example Airlines" <receipts@example-airlines.example>
+To: dana@example.org
+Subject: Your booking receipt
+Date: Mon, 09 Nov 2026 18:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============1949004919130722483=="
+
+--===============1949004919130722483==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Thank you for flying with us. Your booking reference is ABC123.
+
+--===============1949004919130722483==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="receipt-ABC123.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjQgc3R1Yg==
+
+--===============1949004919130722483==--
