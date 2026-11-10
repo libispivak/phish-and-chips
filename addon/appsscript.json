@@ -9,12 +9,13 @@
   ],
   "urlFetchWhitelist": [
     "https://*.trycloudflare.com/",
-    "https://*.run.app/"
+    "https://*.run.app/",
+    "https://*.onrender.com/"
   ],
   "addOns": {
     "common": {
       "name": "Phish & Chips",
-      "logoUrl": "https://raw.githubusercontent.com/libispivak/phish-and-chips/main/docs/icon.png",
+      "logoUrl": "https://raw.githubusercontent.com/libispivak/phish-and-chips/main/docs/icon.png?v=2",
       "homepageTrigger": {
         "runFunction": "onHomepage"
       }
